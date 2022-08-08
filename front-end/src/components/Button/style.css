@@ -1,0 +1,9 @@
+.btn.btn-enable {
+  width: 100%;
+  height: 45px;
+  border: 2px solid #7b96d4;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7b96d4;
+}
