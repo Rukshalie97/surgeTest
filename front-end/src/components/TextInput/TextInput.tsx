@@ -3,7 +3,7 @@ import { ITextInput } from "./types";
 import "./style.css";
 
 const TextInput: FC<ITextInput> = (props) => {
-  const { name, label, onChange, inputType } = props;
+  const { name, label, onChange, inputType, value } = props;
 
   return (
     <>
@@ -14,6 +14,7 @@ const TextInput: FC<ITextInput> = (props) => {
         className={"input text-input"}
         type={inputType}
         name={name}
+        value={value}
       />
     </>
   );

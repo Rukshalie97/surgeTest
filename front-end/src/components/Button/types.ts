@@ -1,4 +1,6 @@
 export interface IButton {
-  onButtonClick?: Function;
+  onButtonClick?: any;
   name?: string;
+  loading?: boolean;
+  disabled?: boolean;
 }
