@@ -74,7 +74,7 @@ const Login = () => {
             }}
           />
           <TextInput
-            inputType={"text"}
+            inputType={"password"}
             label="Password"
             name={"password"}
             onChange={(e: any) => {
