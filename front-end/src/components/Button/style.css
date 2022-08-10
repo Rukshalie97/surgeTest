@@ -6,4 +6,18 @@
   text-align: center;
   color: #ffffff;
   background-color: #7b96d4;
+  cursor: auto; 
+  }
+
+
+.btn.btn-enable:hover {
+  background-color: #7b96d457;
+  color: #7b96d4;
 }
+
+  
+
+
+  
+  
+

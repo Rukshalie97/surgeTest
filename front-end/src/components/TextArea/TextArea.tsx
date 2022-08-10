@@ -3,7 +3,7 @@ import { ITextArea } from "./types";
 import "./style.css";
 
 const TextArea: React.FC<ITextArea> = (props) => {
-  const { name, label, onChange } = props;
+  const { name, label, onChange, value } = props;
 
   return (
     <div>
@@ -14,6 +14,7 @@ const TextArea: React.FC<ITextArea> = (props) => {
         className={"textArea"}
         onChange={onChange}
         rows={5}
+        value={value}
       ></textarea>
     </div>
   );
