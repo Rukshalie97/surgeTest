@@ -4,4 +4,5 @@ export interface ITextInput {
   inputType: string;
   onChange?:any;
   value?: string;
+  placeholder?: string;
 }
