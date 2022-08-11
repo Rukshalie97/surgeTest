@@ -33,10 +33,25 @@ const UserDashBoard = () => {
   const [password, setPassword] = useState("");
   const [userList, setUserList] = useState<any>();
   const [isLoading, setIsLoading] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
+
 
   const handleAdd = () => {
     setAddModalIsOpen(true);
   };
+
+  const handleSearch = () => {
+    const filteredArray = userList.filter(
+      (val: { first_name: string | any[] }) =>
+        val.first_name.includes(searchValue)
+    );
+
+    if (filteredArray) {
+      setUserList(filteredArray);
+    }
+  };
+
+
 
   const handleSave = () => {
     const newUser = {
@@ -83,6 +98,22 @@ const UserDashBoard = () => {
         <div style={{ width: 150, alignSelf: "center", marginLeft: "auto" }}>
           <Button name="Add User" onButtonClick={handleAdd}></Button>
         </div>
+
+        <div style={{ display: "flex" }}>
+        <div style={{ width: "100%" }}>
+          <TextInput
+            inputType={"text"}
+            placeholder="Search by Name"
+            onChange={(e: any) => {
+              setSearchValue(e.target.value);
+            }}
+          />
+        </div>
+        <div style={{ width: 150, alignSelf: "center", marginLeft: "auto" }}>
+          <Button name="Search" onButtonClick={handleSearch}></Button>
+        </div>
+       </div>
+       
       </div>
 
       {/* add modal  */}
