@@ -98,6 +98,7 @@ const UserDashBoard = () => {
         <div style={{ width: 150, alignSelf: "center", marginLeft: "auto" }}>
           <Button name="Add User" onButtonClick={handleAdd}></Button>
         </div>
+        </div>
 
         <div style={{ display: "flex" }}>
         <div style={{ width: "100%" }}>
@@ -111,9 +112,7 @@ const UserDashBoard = () => {
         </div>
         <div style={{ width: 150, alignSelf: "center", marginLeft: "auto" }}>
           <Button name="Search" onButtonClick={handleSearch}></Button>
-        </div>
-       </div>
-       
+        </div>     
       </div>
 
       {/* add modal  */}
