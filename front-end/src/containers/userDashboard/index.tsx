@@ -89,7 +89,7 @@ const UserDashBoard = () => {
         setIsLoading(false);
         console.log(error);
       });
-  }, []);
+  }, [addModalIsOpen]);
 
   return (
     <div style={{ margin: 30 }}>
